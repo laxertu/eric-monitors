@@ -11,12 +11,6 @@ dependencies = [
     "eric-sse (>=2.1.1.2,<3.0.0.0)"
 ]
 
-[tool.poetry.dependencies]
-eric-monitors-watchdog = {path = "./watchdog_integration", optional=true}
-
-[project.optional-dependencies]
-watchdog-support = [ "eric-monitors-watchdog" ]
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
