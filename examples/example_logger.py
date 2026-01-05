@@ -1,12 +1,11 @@
 import asyncio
 import logging
-from eric_monitors.logger import LoggingChannel, EricHandler
+from eric_monitors.python_logger import EricHandler
 
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.CRITICAL)
 
-h = EricHandler(stream_delay_seconds=1)
+h = EricHandler()
 logger.addHandler(h)
 
 #---
@@ -19,12 +18,12 @@ logger.info("info")
 logger.warning("warning")
 logger.error("error")
 logger.critical("critical")
-logger.exception("exception")
+logger.exception("exception", exc_info=False)
 
 
 async def main():
     async for m in h.channel.message_stream(listener=l):
-        print(m)
+        print(f"[{m.type}] {m.payload}")
 
 if __name__ == '__main__':
     asyncio.run(main())

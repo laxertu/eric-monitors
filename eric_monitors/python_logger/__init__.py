@@ -1,17 +1,12 @@
 from logging import Handler
 
 from eric_sse.entities import AbstractChannel
-
-from eric_sse.message import Message
+from eric_sse.message import MessageContract, Message
 
 class LoggingChannel(AbstractChannel):
 
-    def adapt(self, msg: Message) -> dict[str, str]:
-        return {
-            'level': msg.type,
-            'msg': msg.payload
-        }
-
+    def adapt(self, msg: MessageContract) -> MessageContract:
+        return msg
 
 class EricHandler(Handler):
 
@@ -28,8 +23,3 @@ class EricHandler(Handler):
 
     def emit(self, record):
         pass
-
-
-
-
-

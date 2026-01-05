@@ -1,6 +1,6 @@
 [project]
 name = "eric-monitors-watchdog"
-version = "0.1.0"
+version = "0.0.0"
 description = ""
 authors = [
     {name = "luca",email = "laxertu@gmail.com"}
@@ -9,6 +9,7 @@ license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "watchdog (>=6.0.0,<7.0.0)"
 ]
 
 
