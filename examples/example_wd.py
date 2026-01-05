@@ -2,7 +2,7 @@ import asyncio
 import threading
 import sys
 from eric_monitors_watchdog import WatchDogChannel, WatchDogEventHandler
-from watchdog.events import EVENT_TYPE_MODIFIED, DirModifiedEvent, FileModifiedEvent
+from watchdog.events import DirModifiedEvent, FileModifiedEvent
 
 try:
     path = sys.argv[1]
