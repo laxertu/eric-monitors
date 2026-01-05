@@ -1,5 +1,3 @@
-from abc import ABC, abstractmethod
-
 from eric_sse.entities import AbstractChannel
 from eric_sse.message import MessageContract
 
