@@ -13,9 +13,11 @@ dependencies = [
 
 [tool.poetry.dependencies]
 eric-monitors-watchdog = { path = "./eric-monitors-watchdog", optional = true }
+eric-monitors-python-logger = { path = "./eric-monitors-python-logger", optional = true }
 
 [project.optional-dependencies]
 watchdog = ["eric-monitors-watchdog"]
+python_logger = ["eric-monitors-python-logger"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
