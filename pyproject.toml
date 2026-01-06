@@ -3,7 +3,7 @@ name = "eric-monitors"
 version = "0.0.0"
 description = ""
 authors = [
-    {name = "luca",email = "laxertu@gmail.com"}
+    {name = "Luca Stretti",email = "laxertu@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.10"

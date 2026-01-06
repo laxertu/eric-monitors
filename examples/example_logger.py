@@ -1,6 +1,6 @@
 import asyncio
 import logging
-from eric_monitors.python_logger import EricHandler
+from eric_monitors_python_logger import EricHandler
 
 
 logger = logging.getLogger(__name__)
