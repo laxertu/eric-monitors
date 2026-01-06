@@ -2,7 +2,7 @@
 
 [[package]]
 name = "eric-monitors-python-logger"
-version = "0.0.0"
+version = "0.0.1"
 description = ""
 optional = true
 python-versions = ">=3.10"
@@ -16,7 +16,7 @@ url = "eric-monitors-python-logger"
 
 [[package]]
 name = "eric-monitors-watchdog"
-version = "0.0.0"
+version = "0.0.1"
 description = ""
 optional = true
 python-versions = ">=3.10"
