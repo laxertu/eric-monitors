@@ -3,9 +3,9 @@ name = "eric-monitors-python-logger"
 version = "0.0.1"
 description = ""
 authors = [
-    {name = "luca",email = "laxertu@gmail.com"}
+    {name = "Luca Stretti",email = "laxertu@gmail.com"}
 ]
-license = {text = "MIT"}
+license = "MIT"
 readme = "README.md"
 requires-python = ">=3.10"
 
