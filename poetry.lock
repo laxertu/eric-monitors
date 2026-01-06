@@ -7,7 +7,6 @@ description = ""
 optional = true
 python-versions = ">=3.10"
 groups = ["main"]
-markers = "extra == \"watchdog\""
 files = []
 develop = false
 
@@ -37,7 +36,6 @@ description = "Filesystem events monitoring"
 optional = true
 python-versions = ">=3.9"
 groups = ["main"]
-markers = "extra == \"watchdog\""
 files = [
     {file = "watchdog-6.0.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d1cdb490583ebd691c012b3d6dae011000fe42edb7a82ece80965b42abd61f26"},
     {file = "watchdog-6.0.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:bc64ab3bdb6a04d69d4023b29422170b74681784ffb9463ed4870cf2f3e66112"},
@@ -80,4 +78,4 @@ watchdog = ["eric-monitors-watchdog"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "909ccf79edff90f62ab5aee052684a77d33f204e3d6a15dd59622c13622357ab"
+content-hash = "845d7414ffac444e84d3d0f62fcae6a16c17d05ab662935340994f4aab73052c"

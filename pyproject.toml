@@ -11,9 +11,11 @@ dependencies = [
     "eric-sse (>=2.1.1.2,<3.0.0.0)",
 ]
 
+[tool.poetry.dependencies]
+eric-monitors-watchdog = { path = "./eric-monitors-watchdog", optional = true }
 
 [project.optional-dependencies]
-watchdog = ["eric-monitors-watchdog @ file:///home/luca/code/python/eric-monitors/eric-monitors-watchdog"]
+watchdog = ["eric-monitors-watchdog"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
