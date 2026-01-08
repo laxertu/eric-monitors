@@ -1,6 +1,6 @@
 [project]
 name = "eric-monitors"
-version = "0.0.1a0"
+version = "0.0.1a1"
 description = ""
 authors = [
     {name = "Luca Stretti",email = "laxertu@gmail.com"}
@@ -14,7 +14,7 @@ dependencies = [
 
 [tool.poetry.dependencies]
 eric-monitors-watchdog = { path = "./eric-monitors-watchdog", optional = true }
-eric-monitors-python-logger = { path = "./eric-monitors-python-logger", optional = true }
+eric-monitors-python-logger = { path = "eric-monitors-python-logger", optional = true }
 
 [project.optional-dependencies]
 watchdog = ["eric-monitors-watchdog"]

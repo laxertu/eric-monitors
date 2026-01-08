@@ -93,4 +93,4 @@ watchdog = ["eric-monitors-watchdog"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "ff76386e0a00a17183760e923429c592eda9a5f3f094a01ed1954b3a1af4651b"
+content-hash = "3e06e31cd3184570357feeb8196dcf62ef0736b304d472dfd06dde939d841498"
