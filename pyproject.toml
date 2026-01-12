@@ -13,8 +13,8 @@ dependencies = [
 ]
 
 [tool.poetry.dependencies]
-eric-monitors-watchdog = { path = "./eric-monitors-watchdog", optional = true }
-eric-monitors-python-logger = { path = "eric-monitors-python-logger", optional = true }
+eric-monitors-watchdog = { path = "./eric-monitors-watchdog", develop = true}
+eric-monitors-python-logger = { path = "eric-monitors-python-logger", develop = true}
 
 [project.optional-dependencies]
 watchdog = ["eric-monitors-watchdog"]
