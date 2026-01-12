@@ -18,8 +18,5 @@ class EricHandler(Handler):
     def channel(self) -> AbstractChannel:
         return self.__channel
 
-    def handle(self, record):
-        self.__channel.broadcast(Message(msg_type=record.levelname, msg_payload=self.format(record)))
-
     def emit(self, record):
-        pass
+        self.__channel.broadcast(Message(msg_type=record.levelname, msg_payload=self.format(record)))

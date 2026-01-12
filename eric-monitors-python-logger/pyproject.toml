@@ -1,6 +1,6 @@
 [project]
 name = "eric-monitors-python-logger"
-version = "0.0.3"
+version = "0.0.1"
 description = ""
 authors = [
     {name = "Luca Stretti",email = "laxertu@gmail.com"}
