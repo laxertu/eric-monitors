@@ -7,11 +7,13 @@ from watchdog.events import DirModifiedEvent, FileModifiedEvent
 try:
     path = sys.argv[1]
 except IndexError:
-    print("Usage: python example_wd.py <path>")
+    print("Usage: python example_watchdog.py <path to monitor>")
     sys.exit(1)
 
 class MyHandler(WatchDogEventHandler):
-
+    """
+    Extend base Handler to access to notify method, then define events you are interested to
+    """
     def on_modified(self, event: DirModifiedEvent | FileModifiedEvent) -> None:
         self.notify(event)
 
