@@ -1,18 +1,13 @@
 from logging import Handler
 
 from eric_sse.entities import AbstractChannel
-from eric_sse.message import MessageContract, Message
-
-class LoggingChannel(AbstractChannel):
-
-    def adapt(self, msg: MessageContract) -> MessageContract:
-        return msg
+from eric_sse.message import Message
 
 class EricHandler(Handler):
 
-    def __init__(self, level=0, stream_delay_seconds=0):
+    def __init__(self, channel: AbstractChannel, level=0):
         super().__init__(level)
-        self.__channel = LoggingChannel(stream_delay_seconds=stream_delay_seconds)
+        self.__channel = channel
 
     @property
     def channel(self) -> AbstractChannel:
