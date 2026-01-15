@@ -28,7 +28,7 @@ async def main():
     t.daemon = True
     t.start()
 
-    print(f"Create of modify some file in {path}")
+    print(f"Create or modify some file in {path}")
 
     try:
         async for m in c.message_stream(listener=l):
