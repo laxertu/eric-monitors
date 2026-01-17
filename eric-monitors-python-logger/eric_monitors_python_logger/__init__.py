@@ -9,9 +9,5 @@ class EricHandler(Handler):
         super().__init__(level)
         self.__channel = channel
 
-    @property
-    def channel(self) -> AbstractChannel:
-        return self.__channel
-
     def emit(self, record):
         self.__channel.broadcast(Message(msg_type=record.levelname, msg_payload=self.format(record)))
