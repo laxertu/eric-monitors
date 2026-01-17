@@ -10,12 +10,15 @@ import logging
 from eric_monitors_python_logger import EricHandler
 from eric_sse.prefabs import SSEChannel
 
+# Logger setup example
 logger = logging.getLogger(__name__)
 sse_channel = SSEChannel()
 logger.addHandler(EricHandler(sse_channel))
-logger.setLevel(logging.DEBUG)
 
-#---
+# Notify only critical emits
+logger.setLevel(logging.CRITICAL)
+
+# Stream simulation
 l = sse_channel.add_listener()
 l.start()
 
